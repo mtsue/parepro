@@ -4,7 +4,7 @@
   "description": "Todo App on parepro.",
   "private": true,
   "scripts": {
-    "watch": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development",
     "build": "run-s clean build:dev",
     "build:dev": "webpack --mode development",
     "clean": "rimfraf dist/"
