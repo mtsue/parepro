@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "charset": "utf-8",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "target": "esnext",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  }
+}
