@@ -19,6 +19,7 @@ const Head: React.FC = () => {
       todo: addTodo
     };
     setTodos([...todos, todo]);
+    setAddTodo("");
   };
 
   const deleteTodo = (id: number) => {
@@ -44,7 +45,12 @@ const Head: React.FC = () => {
   return (
     <>
       <h1>Todo App</h1>
-      <input type="text" name="todo" onChange={handleChange} />
+      <input
+        type="text"
+        name="todo"
+        value={addTodo}
+        onChange={handleChange}
+      />
       <button onClick={handleClick}>Add</button>
       <button onClick={selectedDeleteTodos}>SELETED DELETE</button>
       <ul>
